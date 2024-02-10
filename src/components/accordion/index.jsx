@@ -22,7 +22,6 @@ const Accordian = () => {
     }
 
     setMultiple(multipleCopy);
-    console.log(findIndexOfCurrentId);
   };
   return (
     <div className="wrapper">
