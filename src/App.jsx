@@ -1,6 +1,8 @@
 import "./App.css";
 import ImageSlider from "./components/image-slider";
-import { LoadMoreData } from "./components/load-more-data";
+// import { LoadMoreData } from "./components/load-more-data";
+import TreeView from "./components/tree-view";
+import { menus } from "./components/tree-view/data";
 // import Accordian from "./components/accordion";
 // import { RandomColor } from "./components/random-color/index";
 // import StarRating from "./components/star-rating";
@@ -25,7 +27,10 @@ function App() {
       /> */}
 
       {/* Load More Data */}
-      <LoadMoreData />
+      {/* <LoadMoreData /> */}
+
+      {/* Tree View List */}
+      <TreeView menus={menus}/>
     </div>
   );
 }

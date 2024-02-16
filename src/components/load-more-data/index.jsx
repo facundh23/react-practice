@@ -24,7 +24,7 @@ export const LoadMoreData = () => {
             
             console.log(products)
         } catch (error) {
-            console.log(data)
+            console.log(error)
             setIsLoading(false)
         }
     }
@@ -57,6 +57,9 @@ export const LoadMoreData = () => {
             </div>
             <div className='btn-container'>
                 <button disabled={disabledBtn} onClick={() => setCount(count => count + 1)}>Load More Products</button>
+                {
+                    disabledBtn ? <p>You have reached to 100 products</p> : null
+                }
             </div>
         </div>
     )
