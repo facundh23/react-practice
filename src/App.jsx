@@ -1,5 +1,6 @@
 import "./App.css";
 import ImageSlider from "./components/image-slider";
+import QrCodeGenerator from "./components/qr-code-generator";
 // import { LoadMoreData } from "./components/load-more-data";
 import TreeView from "./components/tree-view";
 import { menus } from "./components/tree-view/data";
@@ -30,7 +31,10 @@ function App() {
       {/* <LoadMoreData /> */}
 
       {/* Tree View List */}
-      <TreeView menus={menus}/>
+      {/* <TreeView menus={menus}/> */}
+
+      {/* Qr Code */}
+      <QrCodeGenerator />
     </div>
   );
 }
